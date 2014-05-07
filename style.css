@@ -1,0 +1,22 @@
+body {background:#000000 url(background.png) no-repeat fixed center;}
+input.c1:checked + label span {background:url(sprite.png) no-repeat 0px -15px;}
+input.c2:checked + label span {background:url(sprite.png) no-repeat 0px -30px;}
+input.c3:checked + label span {background:url(sprite.png) no-repeat 0px -45px;}
+input.c4:checked + label span {background:url(sprite.png) no-repeat 0px -60px;}
+input {color:#000000;font-family:monospace;}
+input[type="button"]:active,input[type="reset"]:active {background:#993366;border:1px solid #993366;}
+input[type="button"]:hover,input[type="reset"]:hover {background:#CCCC66;border:1px solid #CCCC66;}
+input[type="button"],input[type="reset"] {background:#99CC66;border:1px solid #99CC66;float:right;}
+input[type="checkbox"] {display:none;}
+input[type="checkbox"] + label span {background:url(sprite.png) no-repeat 0px 0px;display:inline-block;height:15px;vertical-align:middle;width:15px;}
+input[type="text"] {background:#ffffff;border:1px solid #666666;}
+span {color:#000000}
+span.d1 {background:#99CC66;margin:0px 1px;padding:1px;}
+span.d2 {background:#CCCC66;margin:0px 1px;padding:1px;}
+span.d3 {background:#993366;margin:0px 1px;padding:1px;}
+span.d4 {background:#666666;margin:0px 1px;padding:1px;}
+span.e1 {margin-right:5px;}
+table#a1 {height:100%;width:100%;}
+table#a2 {background:#000000;width:100%;}
+table#a3 {background:#000000;margin-top:5px;width:100%;}
+table {color:#99CC99;font-family:monospace;margin:0px auto;padding:5px;}

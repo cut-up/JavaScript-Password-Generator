@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>JavaScript password generator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <table id="a1">
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td>
+                                <form name="form">
+                                    <table id="a2">
+                                        <tr>
+                                            <td>
+                                                значение массива с <input type="text" name="b1" value="4" size="2">:
+                                            </td>
+                                            <td colspan="2">
+                                                <input type="checkbox" class="c1" id="c1" name="c1">
+                                                <label for="c1"><span class="e1"></span>0-9</label>
+                                                <input type="checkbox" class="c2" id="c2" name="c2">
+                                                <label for="c2"><span class="e1"></span>a-z</label>
+                                                <input type="checkbox" class="c3" id="c3" name="c3">
+                                                <label for="c3"><span class="e1"></span>A-Z</label>
+                                                <input type="checkbox" class="c4" id="c4" name="c4">
+                                                <label for="c4"><span class="e1"></span>пр.</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                конечное множество:
+                                            </td>
+                                            <td colspan="2">
+                                                <input type="checkbox" class="c1" id="c5" name="c5" checked>
+                                                <label for="c5"><span class="e1"></span>0-9</label>
+                                                <input type="checkbox" class="c2" id="c6" name="c6" checked>
+                                                <label for="c6"><span class="e1"></span>a-z</label>
+                                                <input type="checkbox" class="c3" id="c7" name="c7" checked>
+                                                <label for="c7"><span class="e1"></span>A-Z</label>
+                                                <input type="checkbox" class="c4" id="c8" name="c8">
+                                                <label for="c8"><span class="e1"></span>пр.</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                количество элементов:
+                                            </td>
+                                            <td colspan="2">
+                                                <input type="text" name="b2" value="8" size="2">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                набор символов:
+                                            </td>
+                                            <td colspan="2">
+                                                <input type="text" name="b3" size="20">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                замена:
+                                            </td>
+                                            <td>
+                                                <input type="text" name="b4" size="20">
+                                            </td>
+                                            <td>
+                                                <input type="reset" value="сброс">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table id="a3">
+                                        <tr>
+                                            <td>
+                                                волшебное слово: <span id="password"></span>
+                                            </td>
+                                            <td>
+                                                <input type="button" value="сгенерировать" onClick="document.getElementById('password').innerHTML =
+                                                    getPassword(document.form.b1.value, document.form.b2.value, document.form.b3.value, document.form.b4.value,
+                                                    document.form.c1.checked,
+                                                    document.form.c2.checked,
+                                                    document.form.c3.checked,
+                                                    document.form.c4.checked,
+                                                    document.form.c5.checked,
+                                                    document.form.c6.checked,
+                                                    document.form.c7.checked,
+                                                    document.form.c8.checked);">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
