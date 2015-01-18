@@ -1,0 +1,1 @@
+**sample:** http://syndromeliberty.narod.ru
